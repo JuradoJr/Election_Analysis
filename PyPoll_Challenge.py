@@ -28,7 +28,7 @@ winning_percentage = 0
 
 # 2: Track the largest county and county voter turnout.
 largest_county_turnout = ""
-largest_county_turnout_count = 0
+largest_county_turnout = 0
 largest_county_percentage = 0
 
 
@@ -103,9 +103,9 @@ with open(file_to_save, "w") as txt_file:
          # 6e: Save the county votes to a text file.
         txt_file.write(county_results)
          # 6f: Write an if statement to determine the winning county and get its vote count.
-        if (county_vote > largest_county_turnout_count) and (county_vote_percentage > largest_county_percentage):
+        if (county_vote > largest_county_turnout_) and (county_vote_percentage > largest_county_percentage):
 
-            largest_county_turnout_count = county_vote
+            largest_county_turnout = county_vote
             largest_county_percentage = county_vote_percentage
             largest_county_turnout = county
     # 7: Print the county with the largest turnout to the terminal.
